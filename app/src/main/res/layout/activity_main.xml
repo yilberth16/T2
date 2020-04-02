@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Cliente"
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/edt_nombre"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Type something here"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="38dp"
+        android:textSize="18dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Numero de cuenta"
+        android:textSize="30dp"
+        android:layout_marginTop="83dp"/>
+    <EditText
+        android:id="@+id/edt_telefono"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_nombre"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Type something here"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="45dp"
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de cuenta"
+        android:textSize="30dp"
+        android:layout_marginTop="200dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_telefono"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+
+            android:id="@+id/rdAhorro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:text="AHORRO"
+            android:layout_weight="1"
+            />
+
+        <RadioButton
+
+            android:id="@+id/rdCorriente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+            android:text="CORRIENTE"
+            android:layout_weight="1"
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/rgCuenta"
+        android:ems="10"
+        android:hint="SALDO"
+        android:gravity="top"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="80dp"
+
+
+        android:layout_below="@+id/rgCuenta"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="150dp"
+        android:text="Registrar" />
+
+        <Button
+            android:id="@+id/btnVer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ver registros" />
+    </LinearLayout>
+
+
+</RelativeLayout>
